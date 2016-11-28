@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/logback/logback.iml" filepath="$PROJECT_DIR$/logback/logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava/rxjava.iml" filepath="$PROJECT_DIR$/rxjava/rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stream/stream.iml" filepath="$PROJECT_DIR$/stream/stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-example.iml" filepath="$PROJECT_DIR$/study-example.iml" />
+    </modules>
+  </component>
+</project>
