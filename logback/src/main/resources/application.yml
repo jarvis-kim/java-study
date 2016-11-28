@@ -1,0 +1,6 @@
+debug: ture
+
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: \\ %d{HH:mm} %-5level %logger{36} - %msg%n
