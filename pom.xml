@@ -12,6 +12,7 @@
         <module>rxjava</module>
         <module>stream</module>
         <module>logback</module>
+        <module>spring-redis</module>
     </modules>
 
     <properties>
