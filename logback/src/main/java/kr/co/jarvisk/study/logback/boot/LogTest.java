@@ -10,13 +10,16 @@ public class LogTest {
     public void printLogTest() {
 
         String methodName = Thread.currentThread().getStackTrace()[ 1 ].getMethodName();
-        log.info("S-----------------------" + methodName + "-----------------------S");
+        log.error("S-----------------------" + methodName + "-----------------------S");
         log.trace("trace");
         log.debug("debug");
+
+        log.debug("is debug mode : {}", log.isDebugEnabled());
+
         log.info("info");
         log.warn("warn");
         log.error("error");
-        log.info("E-----------------------" + methodName + "-----------------------E");
+        log.error("E-----------------------" + methodName + "-----------------------E");
 
     }
 

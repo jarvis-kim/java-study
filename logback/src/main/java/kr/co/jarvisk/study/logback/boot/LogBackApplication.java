@@ -8,7 +8,6 @@ import org.springframework.context.ApplicationContext;
 public class LogBackApplication  {
 
     public static final void main(String[] args) {
-
         ApplicationContext applicationContext = SpringApplication.run(LogBackApplication.class);
         LogTest logTest = applicationContext.getBean(LogTest.class);
 
