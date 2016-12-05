@@ -1,4 +1,4 @@
-package kr.co.jarvisk.sutyd.eight;
+package kr.co.jarvisk.study.eight;
 
 public class EightMain {
 
