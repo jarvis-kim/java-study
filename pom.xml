@@ -13,6 +13,7 @@
         <module>stream</module>
         <module>logback</module>
         <module>spring-redis</module>
+        <module>java-eight</module>
     </modules>
 
     <properties>
