@@ -8,4 +8,5 @@ publishOn
  - 퍼블리셔는 빠르지만, Consumer(Subscriber)가 느린경우 사용.
 
 publishOn + subscribeOn
- - 
+ - 데이터를 생성하는 부분을 다른 스레드로, 데이터를 소비하는 스레드를 다른 스레드로 한다.
+ 
