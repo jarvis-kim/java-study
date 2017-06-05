@@ -17,6 +17,13 @@
             <artifactId>reactive-streams</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.0.6.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 </project>
