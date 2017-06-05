@@ -9,18 +9,30 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * To Generic
+ */
 @Slf4j
 public class PubSubOperation2Generic {
 
     public static void main(String[] args) {
 
+        /* iterable 1 to 10 */
         Iterable<Integer> iterable = Stream.iterate(1, v -> v + 1).limit(10).collect(Collectors.toList());
 
+        /* make iterable publisher */
         Publisher<Integer> publisher = makeIterablePub(iterable);
+
+        /* make map publisher ( multiply 10) */
         Publisher<Integer> mapPub = makeMapPub(publisher, v -> v * 10);
+
+        /* make  items sum publisher */
         Publisher<Integer> sumPublisher = makeSumPublisher(mapPub);
+
+        /* make to String publisher (Integer -> String)*/
         Publisher<String> mapPublisher = makeMapPublisher(sumPublisher, integer -> "[" + integer + "]");
 
+        /* log subscribe */
         mapPublisher.subscribe(makeLogSub());
     }
 

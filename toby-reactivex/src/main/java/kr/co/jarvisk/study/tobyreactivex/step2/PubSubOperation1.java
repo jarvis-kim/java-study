@@ -14,11 +14,16 @@ public class PubSubOperation1 {
 
     public static void main(String[] args) {
 
+        /* 1 to 10 iterable*/
         Iterable<Integer> iterable = Stream.iterate(1, v -> v + 1).limit(10).collect(Collectors.toList());
 
+        /* make iterable publisher */
         Publisher<Integer> publisher = makeIterablePub(iterable);
+
+        /* make map publisher ( multiply 10 ) */
         Publisher<Integer> mapPub = makeMapPub(publisher, v -> v * 10);
 
+        /* log subscribe */
         mapPub.subscribe(makeLogSub());
     }
 
