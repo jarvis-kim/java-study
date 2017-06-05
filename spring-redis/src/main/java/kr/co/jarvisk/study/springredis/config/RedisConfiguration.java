@@ -52,7 +52,8 @@ public class RedisConfiguration {
 
     @Bean
     public Jackson2JsonRedisSerializer jacksonJsonRedisSerializer() {
-        return new Jackson2JsonRedisSerializer(CommonUser.class);
+//        return new Jackson2JsonRedisSerializer(CommonUser.class);
+        return null;
     }
 
     @Bean
