@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Async;
@@ -49,7 +51,11 @@ public class SpringCallbackExam {
         /* ThreadPoolTaskExecutor를 사용해서 하면 스레드를 종료(자원을 종료시켜서..) 시켜서 interrupt 나오는듯...?  (java.lang.InterruptedException: sleep interrupted) */
 //        try (ConfigurableApplicationContext ca = SpringApplication.run(SpringCallbackExam.class, args) ) {
 //        }
-        SpringApplication.run(SpringCallbackExam.class, args);
+        SpringApplication sa = new SpringApplicationBuilder()
+                .sources(SpringCallbackExam.class)
+                .web(false)
+                .build();
+        sa.run(args);
     }
 
     @Autowired
