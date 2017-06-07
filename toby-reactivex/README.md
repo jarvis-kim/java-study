@@ -9,4 +9,18 @@ publishOn
 
 publishOn + subscribeOn
  - 데이터를 생성하는 부분을 다른 스레드로, 데이터를 소비하는 스레드를 다른 스레드로 한다.
+
+---
+ 
+Servlet 3.0 : 비동기 서블릿
+ - Http connection은 이미 Non-Blocking IO
+  - Servlet Request, Response 쓰기는 Blocking
+  - 비동기 작업 시작 즉시 서블릿 스레드 반납
+  - 비동기 작업이 완료되면 서블릿 스레드를 재할당
+  - 비동기 서블릿 컨텍스트 이용(AsyncContext)
+  
+Servlet 3.1 : 논블록킹 IO
+ - 논블록킹 서블릿 요청, 응답 처리
+ - Callback
+ 
  
