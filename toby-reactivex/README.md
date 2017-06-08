@@ -23,4 +23,7 @@ Servlet 3.1 : 논블록킹 IO
  - 논블록킹 서블릿 요청, 응답 처리
  - Callback
  
- 
+ResponseBodyEmitter
+- 한번 요청에 여러번의 응답을 사용하는 기술
+  - (스트리밍을 구현하기에 편함 스프링 기술)
+- http의 sse 표준을 따라 데이터를 Streaming 방식으로 출력.
