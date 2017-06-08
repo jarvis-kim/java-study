@@ -12,6 +12,8 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
  * DeferredResult Example
+ *
+ * DeferredResult는 스프링 3.2이상에서 사용 가능.
  */
 @SpringBootApplication
 @Slf4j
