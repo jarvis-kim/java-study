@@ -15,6 +15,7 @@
         <module>spring-redis</module>
         <module>java-eight</module>
         <module>toby-reactivex</module>
+        <module>design-patterns</module>
     </modules>
 
     <properties>
